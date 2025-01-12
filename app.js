@@ -12,7 +12,7 @@ app.use(express.static("public"));
 //! ROUTES
 
 const movieRouter = require("./routers/movieRouter");
-app.use("/movie", movieRouter);
+app.use("/api/movie", movieRouter);
 
 //! ERROR HANDLERS
 const notFound = require("./middleware/notFound");
