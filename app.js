@@ -3,11 +3,11 @@
 const express = require("express");
 const app = express();
 var cors = require("cors");
-const { APP_HOST, APP_PORT } = process.env;
+const { APP_HOST, APP_PORT, APP_FRONTEND_URL } = process.env;
 
 //! CORS
 var corsOptions = {
-  oring: "http://localhost:5173",
+  oring: APP_FRONTEND_URL,
   optionSuccesStatus: 200,
 };
 
